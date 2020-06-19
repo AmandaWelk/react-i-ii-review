@@ -3,10 +3,14 @@
 Answer these on your own, then compare answers as a group
 
 1.  What is state?
+- it's a built in object that you store property values in that belong to the component
+- Where we manage the data for our component
 
 2.  Where do you set initial state?
+- Set the initial state in the constructor of a class component right after we call super.
 
 3.  What method do you use to update state?
+- To update state you would have to use this.state or this.setState
 
 ### Understand
 
@@ -54,7 +58,13 @@ Try these on your own, but work together if you start to get stuck.
 Discuss these questions as a group
 
 7.  Could your `Student` component be refactored into a functional component? Why or why not?
+- No because we need state
 
 8.  What are the pros and cons of using a class method for an event handler vs. using an arrow function inline?
+- Pros
+  - We would not have to bind our function
+- Cons
+  - Depending on the amount or complexity of the codebase, arrow functions could make things less readable at first glance
 
 9.  The render() method is called every time a component's state is updated. For a text input, that means the render method is called for every keypress. Why isn't this bad for performance?
+- Just because render runs doesn't mean the whole DOM or even part of it is being re-rendered. (yay virtual DOM)
